@@ -7,6 +7,11 @@
     <script>
         let age = prompt("How old are you ?")
 
+        // Just checking that the input has been filled with a value
+        if (typeof age !== 'undefined'|| typeof age !== 'null') {
+            throw new Error("Input wasn't selected")
+        }
+
         // Here's a movie recommendation based on age of user
         if (age < 0) {
             console.log("There is an error, you can't be younger than 0 !")
