@@ -7,14 +7,22 @@
     <script>
         let age = 19
         let country = "France"
+        let asLicense = true
         // Adult check
         if (age >= 18) {
             console.log("You are an adult")
         }
 
+        // Conditions, if else/else if
         if (age >= 18 && country === "France") {
             console.log("You can drive a car !")
+        } else if (country === "USA" && age >= 21) {
+            console.log("You can drive a car")
+        } else {
+            console.log("You can't drive a car")
         }
+
+
     </script>
 </head>
 <body>
