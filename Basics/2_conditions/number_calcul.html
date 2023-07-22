@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Getting value using inputs
+        a = parseInt(prompt("Enter a number :"))
+        b = parseInt(prompt("Enter a second number :"))
+
+        result = a + b
+
+        if (Number.isInteger(result)) {
+            if (result < 0) {
+                console.log(`The result is ${result} and it's negative`)
+            } else if (result > 0) {
+                console.log(`The result is ${result} and it's positive`)
+            } else {
+                console.log(`The result is ${result}`)
+            }
+        } else {
+            console.log("Inputs are not in the correct format")
+        }
+
+
+    </script>
+</head>
+<body style="background-color: #644536;">
+    
+</body>
+</html>
