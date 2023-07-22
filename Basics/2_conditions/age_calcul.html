@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // Checks if input is an integer
+        let birth = parseInt(prompt("When were you born ?"))
+
+        let year = new Date()
+        year = year.getFullYear()
+
+        let age = year - birth
+
+        if (Number.isInteger(age)) {
+            console.log("You are " + age + " years old")
+        } else {
+            throw new Error("Input is not correct, it must be an integer !");
+        }
+
+
+    </script>
+</head>
+<body style="background-color: #644536;">
+    
+</body>
+</html>
