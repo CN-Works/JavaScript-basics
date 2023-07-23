@@ -12,14 +12,17 @@
         result = a + b
 
         if (Number.isInteger(result)) {
-            if (result < 0) {
+            // Math.sign return 1 / 0 / -1 if it's positive, null or negative
+            if (Math.sign(result) === -1) {
                 console.log(`The result is ${result} and it's negative`)
-            } else if (result > 0) {
+            } else if (Math.sign(result) === 1) {
                 console.log(`The result is ${result} and it's positive`)
             } else {
+                // Here value is null, so 0
                 console.log(`The result is ${result}`)
             }
         } else {
+            // Just to be sure inputs are ok
             console.log("Inputs are not in the correct format")
         }
 
